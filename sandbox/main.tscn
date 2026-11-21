@@ -3,7 +3,18 @@
 [ext_resource type="Script" uid="uid://bmo6kjmggc5qm" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://deuvcc826w3xs" path="res://player.tscn" id="2_0xm2m"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
+size = Vector2(1440, 285)
+
 [node name="Node2D" type="Node2D" unique_id=1381728948]
 script = ExtResource("1_ig7tw")
 
 [node name="player" parent="." unique_id=1120681390 instance=ExtResource("2_0xm2m")]
+position = Vector2(69, 68)
+
+[node name="floor" type="StaticBody2D" parent="." unique_id=835446506]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=1229783495]
+position = Vector2(593, 673)
+shape = SubResource("RectangleShape2D_yeiif")
+debug_color = Color(0.88394105, 0.29419586, 0.41810498, 0.41960785)
