@@ -12,9 +12,23 @@ script = ExtResource("1_ig7tw")
 [node name="player" parent="." unique_id=1120681390 instance=ExtResource("2_0xm2m")]
 position = Vector2(69, 68)
 
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1392583104]
+position = Vector2(386, 32)
+position_smoothing_enabled = true
+
 [node name="floor" type="StaticBody2D" parent="." unique_id=835446506]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=1229783495]
 position = Vector2(593, 673)
+shape = SubResource("RectangleShape2D_yeiif")
+debug_color = Color(0.88394105, 0.29419586, 0.41810498, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="floor" unique_id=1681349571]
+position = Vector2(3114, 505)
+shape = SubResource("RectangleShape2D_yeiif")
+debug_color = Color(0.88394105, 0.29419586, 0.41810498, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="floor" unique_id=2073158461]
+position = Vector2(2326, 665)
 shape = SubResource("RectangleShape2D_yeiif")
 debug_color = Color(0.88394105, 0.29419586, 0.41810498, 0.41960785)
